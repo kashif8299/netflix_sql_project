@@ -1,7 +1,7 @@
 # **Netflix Data Analytics Using SQL**
 
 
-![netflix logo]()
+![netflix logo](https://github.com/kashif8299/netflix_sql_project/blob/main/pngimg.com%20-%20netflix_PNG6.png)
 
 ## **Project Overview**
 This project focuses on analyzing Netflix's extensive dataset using SQL. It extracts valuable insights, including the most frequent actors, top-rated movies, content distribution by country, and more. By leveraging SQL queries, we explore trends in Netflix's content library and provide a structured approach to data-driven decision-making.
