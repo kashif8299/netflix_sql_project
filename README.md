@@ -1,5 +1,5 @@
 # 📊 Netflix Data Analysis Using SQL  
-![Netflix logo]()
+![Netflix logo](https://github.com/kashif8299/netflix_sql_project/blob/main/images.png)
 
 ## 🚀 Project Overview  
 This project analyzes Netflix’s content library using SQL, extracting insights about **movies, TV shows, durations, actors, directors, and country-wise trends**.  
