@@ -1,34 +1,58 @@
-# 📊 Netflix Data Analysis Using SQL  
-![Netflix logo](https://github.com/kashif8299/netflix_sql_project/blob/main/images.png)
+# **Netflix Data Analytics Using SQL**
 
-## 🚀 Project Overview  
-This project analyzes Netflix’s content library using SQL, extracting insights about **movies, TV shows, durations, actors, directors, and country-wise trends**.  
+## **Project Description**
+This project analyzes Netflix’s dataset using SQL to extract valuable insights, including:
+- Most frequently appearing actors
+- Movies and TV shows distribution by country
+- Most common content ratings
+- Longest movies and TV shows
+- Year-wise content addition trends
 
-## 📂 Dataset  
-- **File:** `netflix_titles.csv`  
-- **Attributes:** title, director, cast, country, release year, duration, rating, etc.  
+## **Dataset**
+- **Source**: Netflix Titles Dataset
+- **Columns**: show_id, type, title, director, cast, country, date_added, release_year, rating, duration, genre, description
 
-## 🎯 Key Analysis & SQL Queries  
-✔ **Total number of movies & TV shows**  
-✔ **Movies released in 2020**  
-✔ **Most frequently appearing actor**  
-✔ **Longest movie & TV show**  
-✔ **Top 5 years with most content added**  
-✔ **Countries with more than 50 shows/movies**  
-✔ **Most prolific director & their movies**  
-✔ **Most common rating**  
+## **Technologies Used**
+- SQL (PostgreSQL / MySQL)
+- Data Cleaning & Transformation
+- Aggregate Functions & Joins
 
-## 💡 Key Insights  
-✅ The **USA and India** dominate Netflix's content.  
-✅ **TV-MA** is the most frequent rating.  
-✅ **The longest movie is The Irishman (209 min)**.  
-✅ **The longest TV show is Grey’s Anatomy (19 seasons)**.  
-✅ **The most frequently featured actor is X**.  
-✅ **The top director has directed Y movies/shows**.  
+## **Key SQL Queries**
+- **Movies released in 2020**
+  ```sql
+  SELECT * FROM netflix_titles WHERE type = 'Movie' AND release_year = 2020;
+  ```
+- **Top 5 years with the most content added**
+  ```sql
+  SELECT release_year, COUNT(*) AS total_content FROM netflix_titles
+  GROUP BY release_year ORDER BY total_content DESC LIMIT 5;
+  ```
 
-## ⚡ Technologies Used  
-- **Database:** PostgreSQL / MySQL  
-- **Query Language:** SQL  
-- **Functions Used:** `COUNT()`, `GROUP BY`, `HAVING`, `STRING_TO_ARRAY()`, `UNNEST()`, `SPLIT_PART()`  
+## **How to Use the Project**
+1. Download the Netflix dataset.
+2. Import it into an SQL database (PostgreSQL, MySQL, etc.).
+3. Run the provided queries to analyze the data.
 
-📢 **Like & Share** if you found this useful! 🚀  
+## **How to Share on LinkedIn**
+1. **Write a Post**
+   - Briefly introduce the project and its insights.
+   - Mention the SQL queries used.
+   - Share your learnings from the project.
+2. **Attach Files**
+   - Upload the `project.sql` file containing the SQL queries.
+   - Attach key result screenshots if possible.
+3. **Use Hashtags**
+   - #SQL #DataAnalytics #NetflixAnalysis #DataScience #PostgreSQL #MySQL
+4. **Tag People**
+   - Tag mentors, peers, or professionals who might find it interesting.
+
+## **Future Enhancements**
+- Adding data visualization using Tableau or Power BI.
+- Performing sentiment analysis on Netflix reviews.
+- Building a recommendation system for Netflix content.
+
+### **Author**
+**[Kashif]** - Data Analyst Enthusiast
+
+
+
